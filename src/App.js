@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 function App(props) {
   return (
     <div className="todoapp stack-large">
