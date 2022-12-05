@@ -3,7 +3,12 @@ import Todo from "./components/Todo";
 
 export default function App({ tasks }) {
   const taskList = tasks.map((task) => (
-    <Todo id={task.id} name={task.name} isCompleted={task.isCompleted} />
+    <Todo
+      id={task.id}
+      name={task.name}
+      isCompleted={task.isCompleted}
+      key={task.id}
+    />
   ));
 
   return (
