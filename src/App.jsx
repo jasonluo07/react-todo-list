@@ -3,7 +3,9 @@ import Form from "./components/Form";
 import FilterButton from "./components/FilterButton";
 import Todo from "./components/Todo";
 
-export default function App({ tasks }) {
+export default function App(props) {
+  const { tasks } = props;
+
   const taskList = tasks.map((task) => (
     <Todo
       id={task.id}

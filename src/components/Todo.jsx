@@ -1,4 +1,6 @@
-export default function Todo({ name, isCompleted, id }) {
+export default function Todo(props) {
+  const { id, name, isCompleted } = props;
+
   return (
     <li className="todo stack-small">
       <div className="c-cb">
