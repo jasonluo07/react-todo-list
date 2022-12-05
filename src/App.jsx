@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
-function App(props) {
+export default function App(props) {
   return (
     <div className="todoapp stack-large">
       <h1>TodoMatic</h1>
@@ -97,5 +97,3 @@ function App(props) {
     </div>
   );
 }
-
-export default App;
