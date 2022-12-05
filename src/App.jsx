@@ -1,7 +1,11 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
-import Todo from "./components/Todo"
+import Todo from "./components/Todo";
 
-export default function App(props) {
+export default function App({ tasks }) {
+  const taskList = tasks.map((task) => (
+    <Todo id={task.id} name={task.name} isCompleted={task.isCompleted} />
+  ));
+
   return (
     <div className="todoapp stack-large">
       <h1>TodoMatic</h1>
@@ -47,9 +51,7 @@ export default function App(props) {
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading"
       >
-        <Todo name="Eat" isCompleted={true} id="todo-0" />
-        <Todo name="Sleep" isCompleted={false} id="todo-1" />
-        <Todo name="Repeat" isCompleted={false} id="todo-2" />
+        {taskList}
       </ul>
     </div>
   );
