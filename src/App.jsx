@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
+import { nanoid } from "nanoid";
 import { useState } from "react";
 
 import Form from "./components/Form";
@@ -18,7 +19,7 @@ export default function App(props) {
   ));
 
   function addTask(name) {
-    const newTask = { id: "id", name, isCompleted: false };
+    const newTask = { id: `todo-${nanoid()}`, name, isCompleted: false };
     setTasks([...tasks, newTask]);
   }
 
