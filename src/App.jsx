@@ -9,7 +9,7 @@ import Todo from "./components/Todo";
 const FILTER_MAP = {
   All: () => true,
   Active: (task) => !task.isCompleted,
-  Completed: (task) => task.isCompleted
+  Completed: (task) => task.isCompleted,
 };
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
@@ -68,7 +68,7 @@ export default function App(props) {
     setTasks([...tasks, newTask]);
   }
 
-  const tasksNoun  = taskList.length !== 1 ? "tasks" : "task";
+  const tasksNoun = taskList.length !== 1 ? "tasks" : "task";
   const headingText = `${taskList.length} ${tasksNoun} remaining`;
 
   return (
