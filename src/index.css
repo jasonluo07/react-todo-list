@@ -164,6 +164,7 @@ body {
 }
 .todoapp > form {
   max-width: 100%;
+  margin-top: 1.2rem;
 }
 .todoapp > h1 {
   display: block;
