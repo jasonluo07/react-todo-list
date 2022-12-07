@@ -2,7 +2,7 @@
 
 就是那個 Todo List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with Create React App.
 
 ## 展示
 
