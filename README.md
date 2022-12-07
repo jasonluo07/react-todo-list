@@ -2,6 +2,8 @@
 
 就是那個 Todo List
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ## 展示
 
 [點擊查看](https://jasonluo07.github.io/react-todo-list/)
