@@ -1,8 +1,12 @@
 # React Todo List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+就是那個 Todo List
 
-## Preview
+## 展示
+
+[點擊查看](https://jasonluo07.github.io/react-todo-list/)
+
+## 預覽
 
 ![image](https://github.com/jasonluo07/react-todo-list/blob/main/project-preview.png)
 
